@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aangik - Fashion Redefined</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+        }
+        .logo h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #333;
+        }
+        .logo p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            /* padding: 3rem 1rem; */
+            background-color: #e9ecef;
+        }
+.coverphoto {
+    background-image: url('./images/stunning-barefooted-woman-trendy-fur-coat-dancing-laughing-photoshoot.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    /* margin-bottom: 20px; */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+
+.coverphoto h2 {
+    font-size: 3em;
+    margin-top: 100px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: rgb(94, 110, 139);
+}
+
+.coverphotobutton {
+    background-color: #fff;
+    color: #333;
+    padding: 7px 7px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    transition-timing-function: ease-in;
+
+}
+
+.coverphotobutton:hover {
+    background-color: rgb(54, 208, 188);
+    color: #fff;
+}
+        .btn {
+            display: inline-block;
+            margin: 1rem 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .collection {
+            padding: 2rem 1rem;
+        }
+        .collection h2 {
+            text-align: center;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .product-card {
+            border: -1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .product-card img {
+            width: 300px;
+            /* height: auto; */
+            border-radius: 5px;
+        }
+        .product-card button {
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .product-card button:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+        #about, #contact {
+            padding: 2rem 1rem;
+            background-color: #f1f1f1;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #343a40;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Aangik</h1>
+            <p>The Form of Confidence</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#mens">Men</a></li>
+                <li><a href="#womens">Women</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="coverphoto"><br><br><br><br><br>
+        <h2>Embrace Elegance with Aangik</h2>
+        <p>Explore our latest collection of traditional and formal fashion for men and women.</p>
+        <a href="#mens-casual" class="btn">Shop Men</a>
+        <a href="#womens-casual" class="btn">Shop Women</a>
+        </div>
+    </section>
+
+    <section id="mens-casual" class="collection">
+        <h2>Men's Casual Wear</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="images/fashionable-man-front-blue-wall.jpg" alt="T-Shirt">
+                <p>T-Shirt</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/handsome-confident-young-curly-haired-man-drinking-coffee-standing-infront-isolated-white-wall.jpg" alt="Jeans">
+                <p>Jeans</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/FB_IMG_1667494351680.jpg" alt="Casual Panjabi">
+                <p>Casual Panjabi</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="womens-casual" class="collection">
+        <h2>Women's Casual Wear</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="images/young-hipster-woman-posing-california-beach-sunset-sunny-autumn-time-wearing-trendy-faux-fur-jacket-mini-skirt.jpg" alt="Cotton Kurti">
+                <p>Cotton Kurti</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/portrait-young-woman-wearing-traditional-sari-garment.jpg" alt="Printed Saree">
+                <p>Printed Saree</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/city-outdoor-black-stylish-hand.jpg" alt="Palazzo Set">
+                <p>Palazzo Set</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="mens-formal" class="collection">
+        <h2>Men's Formal Wear</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="images/portrait-happy-smiling-young-businessman-blue-suit-isolated-white-wall.jpg" alt="Formal Shirt">
+                <p>Formal Shirt</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/man-tuxedo-studio.jpg" alt="Blazer">
+                <p>Blazer</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/attractive-businessman-standing-blue-suit-tie-wearing-glasses-white-background.jpg" alt="Formal Pants">
+                <p>Formal Pants</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="womens-formal" class="collection">
+        <h2>Women's Formal Wear</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="images/fashion-portrait-young-elegant-woman.jpg" alt="Silk Saree">
+                <p>Silk Saree</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/sexy-smart-blonde-with-long-curly-hair-poses-black-jacket-black-gloves.jpg" alt="Formal Kurti">
+                <p>Formal Kurti</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/attractive-business-woman-blue-jacket-by-office-center.jpg" alt="Salwar Kameez">
+                <p>Salwar Kameez</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Aangik</h2>
+        <p>Aangik is a Bengali fashion store that blends heritage with modern design, bringing you the best in traditional and formal wear.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@aangik.com</p>
+        <p>Phone: +880-1XXXXXXX</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aangik. All rights reserved.</p>
+    </footer>
+</body>
+</html>
